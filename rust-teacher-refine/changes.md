@@ -2,7 +2,13 @@
 
 Newest first. One entry per refine run: date, request, files changed, why, anything left inconsistent on purpose.
 
-## 2026-11-17 (newest): project changed from the figure tracker to TeamCord
+## 2026-11-17 (newest): TeamCord roadmap added
+- Request: after a grilling session, write the TeamCord roadmap into a separate folder in the rust skill.
+- Files: new `rust-teacher/projects/teamcord/ROADMAP.md` and `CHECKLIST.md`; `rust-teacher/SKILL.md` (supporting files list, Modules paragraph); this skill's table row. Backup: `~/.claude/skill-backups/rust-teacher-2026-11-17-2/`.
+- Decisions recorded in the roadmap: stages 0 to 5 (offline model, local messages, auth, across the web, friends, servers and channels), MessagePack over WebSocket, invite-code auth with hybrid cookie and ticket, workspace layout, `sqlx`, UUIDv7.
+- Left open on purpose: how the friend reaches the server in stage 3. Crate names and hosting options are from memory and unchecked. The repo copy at `~/source/repos/rust-teacher` does not yet have the new folder.
+
+## 2026-11-17 (earlier): project changed from the figure tracker to TeamCord
 - Request: replace the figure tracker and every reference to it and its stack with TeamCord (their own C# chat backend, to be rewritten in Rust, plus the front end and Docker). The stack is whatever is already in `~/source/repos/TeamCord/`; no Kubernetes for now.
 - Files: `rust-teacher/SKILL.md` (supporting files list, Modules paragraph, C# section), `curriculum.md` (side tracks, topic 19 gains WebSockets), `log-format.md` (module logs), `modules/containers-docker.md` (replaces `containers-podman.md`), `modules/public-api-design.md` (rewritten for an authenticated chat API and WebSockets), `modules/typescript-react.md` (tracker-specific parts replaced); removed `modules/kubernetes.md`, `terraform-hetzner.md`, `ci-cd-make.md`. This skill's `SKILL.md` (new table row). `rust-learning/log/overview.md`, `project-ideas.md`, `decisions.md` (project text only; no levels touched). Memory `project_no-arabic.md` removed. Backup of everything: `~/.claude/skill-backups/rust-teacher-2026-11-17-1/` (includes the removed modules and the old log files).
 - Old position: Rust, Postgres, TypeScript/React, Podman, k3s, Terraform, Hetzner Cloud, Make and CI for a read-only public data API.

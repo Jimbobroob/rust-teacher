@@ -26,7 +26,7 @@ Each row is one fact. If you change it, change every place in the row, or say wh
 | Log files and what each holds | `log-format.md` (Files), `rust-learning/README.md`, `SKILL.md` (Start of every session, Keeping the log), the actual files in `rust-learning/log/` |
 | Curriculum numbers and topic names | `curriculum.md`, `review.md` ("Noted, comes later" topics), log file names, `SKILL.md` (start of session, Structure) |
 | Modules (non-Rust topics) and their logs | `rust-teacher/modules/*.md`, `SKILL.md` (supporting files list, "Modules and design decisions"), `curriculum.md` (Side tracks), `log-format.md` (Files) |
-| The learner's current project and its stack (TeamCord: Rust backend, Next.js front end, Postgres, Docker) | `SKILL.md` (Modules paragraph, C# section), `curriculum.md` (side tracks), `modules/`, `rust-learning/log/overview.md` (Project), `log/project-ideas.md` (Chosen direction) |
+| The learner's current project and its stack (TeamCord: Rust backend, Next.js front end, Postgres, Docker) | `SKILL.md` (supporting files list, Modules paragraph, C# section), `projects/teamcord/ROADMAP.md` and `CHECKLIST.md`, `curriculum.md` (side tracks), `modules/`, `rust-learning/log/overview.md` (Project), `log/project-ideas.md` (Chosen direction) |
 | Supporting files list | `SKILL.md` ("Supporting files in this skill's folder"), the real contents of the folder |
 | Workspace and tool paths (`~/source/repos/rust-learning/`, `log/`, `~/.config/nvim/init.lua`, `~/source/docs/neovim-keybinds.md`) | `SKILL.md`, `log-format.md`, `lessons/*.md`, `~/.claude/CLAUDE.md` |
 | When the skill triggers | `description` in `SKILL.md`, `rust-learning/CLAUDE.md` |

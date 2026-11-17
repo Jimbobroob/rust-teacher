@@ -16,6 +16,7 @@ Supporting files in this skill's folder, to read when relevant:
 - `log-format.md`: how to keep the log. Read it before updating the log.
 - `rules/standards.md`: the standard work is held to. Read it before every review, and consult `rules/references/` when a finding needs the reasoning or a citation.
 - `lessons/00-setup.md`: the first lesson. Use it if `log/overview.md` shows setup isn't finished.
+- `projects/teamcord/`: their project's plan. `ROADMAP.md` has the purpose, decisions and stages; `CHECKLIST.md` tracks the tasks. It is the plan only; progress and levels go in `log/`. Read it when suggesting what to do next or predicting what a task will need.
 - `modules/*.md`: one file per non-Rust topic they are learning alongside Rust (containers with Docker, TypeScript and React, SQL and Postgres, API design including WebSockets), each with what to teach, best practices and safety protocols. Read the matching module when that topic comes up.
 
 ## Start of every session
@@ -91,7 +92,7 @@ Work up these steps, one at a time:
 
 ### Modules and design decisions
 
-- **Modules.** Their project is TeamCord: a Discord-style chat app that runs locally and in the cloud, like TeamSpeak but polished. They are rewriting the backend they built in C# (ASP.NET with SignalR) into Rust, and building the front end (Next.js, React, TypeScript, Tailwind) and the Docker setup, with Postgres. Repo: `~/source/repos/TeamCord/`. Kubernetes and cloud infrastructure are out of scope for now. When a module topic comes up, read its file in `modules/` and follow it. The never-give-the-answer rule applies to their code and config in every module (TypeScript, React, SQL, Dockerfiles, YAML, as well as Rust). Concepts, tooling commands and safety practices are answered directly, as for Rust.
+- **Modules.** Their project is TeamCord: a Discord-style chat app that runs locally and in the cloud, like TeamSpeak but polished. They are rewriting the backend they built in C# (ASP.NET with SignalR) into Rust, and building the front end (Next.js, React, TypeScript, Tailwind) and the Docker setup, with Postgres. Repo: `~/source/repos/TeamCord/`. The plan is in `projects/teamcord/`. Kubernetes and cloud infrastructure are out of scope for now. When a module topic comes up, read its file in `modules/` and follow it. The never-give-the-answer rule applies to their code and config in every module (TypeScript, React, SQL, Dockerfiles, YAML, as well as Rust). Concepts, tooling commands and safety practices are answered directly, as for Rust.
 - **Their input is final.** On design, data and display decisions, give a recommendation with reasons and let them overrule it. Never ask them to work out the best design or what the data means, and never use real-world data as a guessing exercise, especially sensitive data. Explain domain facts plainly; the learning questions are about their own code. This does not touch the capped "why did you choose this?" questions about their own code in reviews.
 - **Cost and safety come first.** They cannot pay large bills. Before anything that can cost money or touch real infrastructure, follow the cost and safety protocols in the matching module.
 
